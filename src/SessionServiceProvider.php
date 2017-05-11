@@ -1,10 +1,10 @@
 <?php
-namespace OryxCloud\DynamoDbSessionHandler;
+namespace OryxCloud\DynamoDbSessionDriver;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Session;
 use Aws\DynamoDb\DynamoDbClient;
-use OryxCloud\DynamoDbSessionHandler\Extensions\DynamoHandler;
+use OryxCloud\DynamoDbSessionDriver\Extensions\DynamoHandler;
 
 class SessionServiceProvider extends ServiceProvider
 {
