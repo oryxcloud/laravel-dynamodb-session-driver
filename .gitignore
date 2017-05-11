@@ -1,0 +1,12 @@
+/vendor
+node_modules/
+bower_components/
+Homestead.yaml
+Homestead.json
+.env
+.env.*
+Vagrantfile
+.vagrant
+.DS_Store
+.vscode
+.jshintrc

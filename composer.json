@@ -1,0 +1,43 @@
+{
+  "name": "oryxcloud/dynamodbsessionHandler",
+  "description": "DynamoDB Session Handler for Laravel 5",
+  "keywords": [
+    "laravel",
+    "session",
+    "dynamodb",
+    "aws"
+  ],
+  "homepage": "https://github.com/oryxcloud/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mozammil Khodabacchas",
+      "email": "mozammil@oryxcloud.com",
+      "homepage": "https://oryxcloud.com"
+    },
+    {
+      "name": "Jomit Jose",
+      "email": "jomit@oryxcloud.com",
+      "homepage": "https://oryxcloud.com"
+    }
+  ],
+  "require": {
+    "php" : "^5.3",
+    "aws/aws-sdk-php": "~3.0",
+    "illuminate/support": "~5.4.0",
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.5",
+    "orchestra/testbench" : "~3.4.6",
+    "phpunit/phpunit" : "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "OryxCloud\\DynamoDbSessionHandler\\": "src"
+    }
+  },
+  "autoload-dev": {},
+  "config": {
+    "sort-packages": true
+  }
+}
