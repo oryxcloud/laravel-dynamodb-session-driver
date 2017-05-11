@@ -1,5 +1,5 @@
 {
-  "name": "oryxcloud/dynamodbsessionHandler",
+  "name": "oryxcloud/dynamodb-session-handler",
   "description": "DynamoDB Session Handler for Laravel 5",
   "keywords": [
     "laravel",
@@ -24,7 +24,7 @@
   "require": {
     "php" : "^5.3",
     "aws/aws-sdk-php": "~3.0",
-    "illuminate/support": "~5.4.0",
+    "illuminate/support": "~5.4.0"
   },
   "require-dev": {
     "mockery/mockery": "^0.9.5",
