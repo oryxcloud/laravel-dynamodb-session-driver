@@ -2,4 +2,14 @@
 
 This is a Laravel Session Driver for [DynamoDB](https://aws.amazon.com/dynamodb)
 
-Documentation coming soon. 
+## Documentation 
+coming soon. 
+
+## Contributors
+- [Mozammil Khodabacchas](https://github.com/mozammil)
+- [Jomit Jose](https://github.com/jomoos)
+
+## License
+
+The MIT License (MIT). Please see [License File](license.md) for more information.
+
