@@ -62,10 +62,12 @@ After going through all the installation steps, the `dynamodb` Session driver wi
 SESSION_DRIVER=dynamodb
 ```
 
-
 ## Contributors
 - [Mozammil Khodabacchas](https://github.com/mozammil)
 - [Jomit Jose](https://github.com/jomoos)
+
+## Credits
+[DynamoDb Session Handler for Symfony 2](https://github.com/gwkunze/dynamo-session-bundle)
 
 ## License
 
