@@ -24,6 +24,7 @@ class SessionServiceProvider extends ServiceProvider
             $client = new DynamoDbClient([
                 'region'  => config('dynamodb-session.region'),
                 'version' => 'latest',
+                'endpoint' => config('dynamodb-session.endpoint'),
                 'credentials' => [
                     'key'    => config('dynamodb-session.key'),
                     'secret' => config('dynamodb-session.secret'),
