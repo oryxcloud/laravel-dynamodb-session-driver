@@ -10,3 +10,7 @@ Vagrantfile
 .DS_Store
 .vscode
 .jshintrc
+/.buildpath
+/.project
+/.settings
+/composer.lock

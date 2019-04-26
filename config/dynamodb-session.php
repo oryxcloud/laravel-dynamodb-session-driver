@@ -1,9 +1,8 @@
 <?php
 return [
-
     /*
     |--------------------------------------------------------------------------
-    | AWS Configuration details
+    | AWS Configuration Details
     |--------------------------------------------------------------------------
     |
     */
@@ -14,9 +13,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Hash key
+    | DynamoDB Session Configuration Details
     |--------------------------------------------------------------------------
-    | Name of hash key in table. Default: "id".
+    |
     */
+    // Name of table to store the sessions. Default: config('session.table')
+    'table_name' => env( 'DYNAMO_SESSIONS_TABLE', config('session.table') ),
+
+    // Name of hash key in table. Default: "id"
     'hash_key' => env('DYNAMODB_HASH_KEY', 'id'),
+
+    // Name of the data attribute in table. Default: "data"
+    'data_attribute' => env('DYNAMODB_DATA_ATTRIBUTE', 'data'),
+
+    // Name of the session life time attribute in table. Default: "expires"
+    'session_lifetime_attribute' => env('DYNAMODB_SESSION_LIFETIME_ATTRIBUTE', 'expires')
 ];
