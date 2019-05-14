@@ -32,9 +32,11 @@ class SessionServiceProvider extends ServiceProvider
             ]);
 
             $config = [
-                'table_name'       => config('session.table'),
+                'table_name'       => config('dynamodb-session.table_name'),
                 'hash_key'         => config('dynamodb-session.hash_key'),
-                'session_lifetime' => 60 * config('session.lifetime')
+                'data_attribute'         => config('dynamodb-session.data_attribute'),
+                'session_lifetime' => 60 * config('session.lifetime'),
+                'session_lifetime_attribute' => config('dynamodb-session.session_lifetime_attribute')
             ];
 
             return new DynamoHandler($client, $config);
