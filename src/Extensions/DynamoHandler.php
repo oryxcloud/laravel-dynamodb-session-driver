@@ -1,5 +1,5 @@
 <?php
-namespace OryxCloud\DynamoDbSessionDriver\Extensions;
+namespace Td141\DynamoDbSessionDriver\Extensions;
 
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\DynamoDb\SessionHandler;

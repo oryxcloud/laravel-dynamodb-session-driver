@@ -4,7 +4,7 @@ namespace OryxCloud\DynamoDbSessionDriver;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Session;
 use Aws\DynamoDb\DynamoDbClient;
-use OryxCloud\DynamoDbSessionDriver\Extensions\DynamoHandler;
+use Td141\DynamoDbSessionDriver\Extensions\DynamoHandler;
 
 class SessionServiceProvider extends ServiceProvider
 {
