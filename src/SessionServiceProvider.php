@@ -21,15 +21,21 @@ class SessionServiceProvider extends ServiceProvider
 
         Session::extend('dynamodb', function($app)
         {
-            $client = new DynamoDbClient([
+
+            $config = [
                 'region'  => config('dynamodb-session.region'),
                 'version' => 'latest',
                 'endpoint' => config('dynamodb-session.endpoint'),
-                'credentials' => [
+            ];
+
+            if (config('dynamodb-session.key') !== null && config('dynamodb-session.secret') !== null){
+                $config['credentials'] = [
                     'key'    => config('dynamodb-session.key'),
                     'secret' => config('dynamodb-session.secret'),
-                ],
-            ]);
+                ];
+
+            }
+            $client = new DynamoDbClient($config);
 
             $config = [
                 'table_name'       => config('dynamodb-session.table_name'),
