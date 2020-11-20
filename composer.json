@@ -1,5 +1,5 @@
 {
-  "name": "oryxcloud/laravel-dynamodb-session-driver",
+  "name": "td141/laravel-dynamodb-session-driver",
   "description": "DynamoDB Session Driver for Laravel 5",
   "keywords": [
     "laravel",
